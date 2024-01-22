@@ -1,0 +1,3 @@
+spostare random_state in alto
+spostare df_X e df_y prima di tsne
+tnse per visualization
