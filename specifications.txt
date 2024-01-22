@@ -26,3 +26,60 @@ Poi attraverso il test module fai il performance measure sul dataset di test che
 E' un problema di regressione, quindi usa il MSE come metrica per i migliori iperparametri
 Ogni riga del dataset è una canzone. una settantina di colonne che rappresentano varie caratteristiche della canzone sotto forma numerica.
 E' meglio trattarlo come regressione perchè nella classificazione gli errori sono tutti uguali. Ad esempio sbagliare tra anno 2005 e 1920. Mentre nella regressione tale errore è diverso.
+
+-------------------------------------------- parte Cla da editare
+orale e scritto sono nella stessa data 
+orale = domande di teoria sulle tecniche usate nel progetto e non 
+22/01 16/02 inizio giugno, inizio luglio, fine luglio, prima metà di settembre
+consegnare il progetto almeno 3 giorni prima della data dell'appello
+
+su virtuale consegnare sorgenti e relazione
+
+nella relazione:
+-intro
+-metodologia
+-implementazione 
+-risultati
+
+presentazione e demo
+
+data acquisition
+data visualization
+data preprocessing (quelle necessarie per il task)
+modeling (con tuning degli iperparametri)
+performance evaluation
+
+il progetto è suddiviso in 3 funzionalità
+prima fatta bene > 25
+seconda fatta bene (e precedenti) > 28
+terza fatta bene (e precedenti) > 30 e lode
+
+si rifanno solo le parti in cui si è insufficienti
+se il voto non ci soddisfa, non si può riconsegnare lo stesso progetto
+per rifare, bisogna avere una nuova traccia
+
+strutturare il progetto in due moduli autonomi 
+training module: tutto il codice che prende in input il dataset, lo preprocessa, fa il tuning degli iper e costruisce il modello su di essi
+inference module: in questa componente vengono istanziate le tecniche usando gli iperparametri migliori e deve rispettare le api descritte nella slide specifica
+
+- name
+- per la funzione di preprocessing da mettere obbligatoriamente in test.py, clfName può assumere solo 7 valori > dict ????
+- load(clfName) > NB il fit è vietato > libreria pickle??? salvo su disco l'oggetto python allenato con i tot dati durante la fase di train e poi lo tiro su durante la fase di test
+- predict
+
+consiglio: 
+divido in train-val-test, le prime due parti le uso nel training module e l'ultima nel test module
+oppure
+divido solo in train-val e ne uso una per ciascun modulo
+
+pickle.dump(reg, file) > salva in file il modello di linear regression (in questo caso, ma valido anche per scaler e le altre tecniche), poi questo oggetto lo riprendo nel test
+
+NB nel training fa solo fit e non predict
+
+nel test toy la seconda parte è per farci capire quello che faranno i prof, ma noi non dobbiamo implementarla
+
+NON FARE FIT E TUNING NEL TEST
+
+ogni riga è una canzone con circa 60-70 feature
+si potrebbe trattare come classificazione, ma è meglio trattarlo come un problema di regressione perchè in quest'ultimo caso c'è una discriminazione migliore degli errori
+
