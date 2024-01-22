@@ -1,0 +1,28 @@
+domande di teoria sulle tecniche del progetto e in generale sul corso.
+
+22 gennaio
+16 febbraio
+giugno luglio1 luglio2 settembre
+
+consegnare il progetto su virtuale almeno 3 giorni prima della data dell'esame
+
+SE NEL PROGETTO SI PARTE DALLA TEORIA, FAR CAPIRE CHE HAI CAPITO LA TEORIA, "L'ORALE VA QUASI DI CONSEGUENZA"
+
+- se l'esame non va come desiderato, si può ripetere l'esame? vale il progetto? Le due prove sono separate
+- se il progetto è insufficiente ma non soddisfa il voto, bisogna ricominciare un nuovo progetto. Ad esempio PCA sapere gli autovettori e autovalori.
+- sulla parte orale, quanto bisogna studiare nel dettaglio l'aspetto matematico dei vari algoritmi?
+
+progetto è una relazione su vari punti
+la prima parte dell'esame è presentazione del progetto. Può essere richiesta una demo.
+
+La parte di test non deve essere testata su alcunché. Sono solo funzioni da riempire con i modelli con i migliori imperparametri, e poi loro testano sul loro test set.
+
+Devi usare pickle perché devi salvare l'oggetto del preprocesser e del model fittati sul train, per trasformare e performare il test.
+
+Quello che viene consigliato è dividere in train e test, e fare performance measure sul test.
+Nel train module viene usato il dataset di train
+Poi attraverso il test module fai il performance measure sul dataset di test che ti rimane.
+
+E' un problema di regressione, quindi usa il MSE come metrica per i migliori iperparametri
+Ogni riga del dataset è una canzone. una settantina di colonne che rappresentano varie caratteristiche della canzone sotto forma numerica.
+E' meglio trattarlo come regressione perchè nella classificazione gli errori sono tutti uguali. Ad esempio sbagliare tra anno 2005 e 1920. Mentre nella regressione tale errore è diverso.
