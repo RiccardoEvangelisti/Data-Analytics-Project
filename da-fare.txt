@@ -1,1 +1,3 @@
 TO-DO list
+
+piccolo boxplot (o simili) per capire il range dei parametri e se ci sono outliers
