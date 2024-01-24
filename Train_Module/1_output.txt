@@ -14,3 +14,12 @@ LINEAR MODEL:
 	min-max + ica: number of components=90
 
 SAVED: ----> min-max + lda3 data. R^2: 0.23782584924220873
+
+
+
+----> std-scaler + pca 0.95% data. Params: {'pca__n_components': 0.95, 'pca__svd_solver': 'full', 'pca__whiten': True}. R^2: 0.1797402974001988. MSE: 90.38970186944773
+	std-scaler + pca 0.95%: number of components=67, total variance=0.9526203397533136
+----> lda2 data. Params: {'lda__covariance_estimator': EmpiricalCovariance(), 'lda__solver': 'eigen'}. R^2: 0.23782584924220895. MSE: 83.98888064504675
+	lda2: number of components=53, total variance=0.999999999999971
+
+SAVED: ----> lda2 data. R^2: 0.23782584924220895
