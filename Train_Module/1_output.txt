@@ -35,3 +35,15 @@ RANDOM FOREST
 
 ----> ica data. Params: {'ica__fun': 'logcosh', 'ica__max_iter': 400, 'ica__whiten': 'unit-variance', 'ica__whiten_solver': 'eigh', 'rf__criterion': 'squared_error', 'rf__max_samples': 0.1, 'rf__n_estimators': 200}. R^2: 0.23245098783933904. MSE: 84.58117125527077
 	ica: number of components=90
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+KNN
+
+----> min-max + lda2 data. Params: {'lda__covariance_estimator': LedoitWolf(), 'lda__solver': 'eigen'}. R^2: 0.24434413137373268. MSE: 83.27058913724507
+		min-max + lda2: number of components=53, total variance=1.1631757866128345
+----> std-scaler + lda2 data. Params: {'lda__covariance_estimator': OAS(), 'lda__solver': 'eigen'}. R^2: 0.2378338317181682. MSE: 83.98800100458672
+		std-scaler + lda2: number of components=53, total variance=1.6740033401918168
+----> lda2 data. Params: {'lda__covariance_estimator': EmpiricalCovariance(), 'lda__solver': 'eigen'}. R^2: 0.24033028009024615. MSE: 83.71290127291712
+		lda2: number of components=53, total variance=0.9999999999999859
