@@ -38,6 +38,8 @@ RANDOM FOREST
 
 ----> min-max + lda1 data. Params: {'lda__shrinkage': None, 'lda__solver': 'eigen', 'rf__criterion': 'squared_error', 'rf__max_samples': 0.1, 'rf__n_estimators': 200}. R^2: 0.2978283982216947. MSE: 77.37681315413798
 		min-max + lda1: number of components=53, total variance=0.9999999999999724
+        
+----> min-max + lda2 data. Params: {'lda__covariance_estimator': MinCovDet(), 'lda__solver': 'eigen', 'rf__criterion': 'squared_error', 'rf__max_samples': 0.1, 'rf__n_estimators': 200}. R^2: 0.30458622215801656. MSE: 76.63212499140816
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 KNN
