@@ -1,0 +1,16 @@
+LINEAR MODEL:
+
+----> raw data. Params: {}. R^2: 0.23782584924220862. MSE: 83.98888064504679
+----> std-scaled data. Params: {}. R^2: 0.2378258492422083. MSE: 83.98888064504682
+----> min-max + pca 0.95% data. Params: {'pca__n_components': 0.95, 'pca__svd_solver': 'full', 'pca__whiten': False}. R^2: 0.2249005580982505. MSE: 85.4132017586834
+	min-max + pca 0.95%: number of components=54, total variance=0.9507814350412582
+----> min-max + lda1 data. Params: {'lda__shrinkage': None, 'lda__solver': 'eigen'}. R^2: 0.2378258492422083. MSE: 83.98888064504682
+	min-max + lda1: number of components=53, total variance=1.0000000000000004
+----> min-max + lda2 data. Params: {'lda__covariance_estimator': EmpiricalCovariance(), 'lda__solver': 'eigen'}. R^2: 0.2378258492422083. MSE: 83.98888064504682
+	min-max + lda2: number of components=53, total variance=1.0000000000000004
+----> min-max + lda3 data. Params: {'lda__solver': 'svd', 'lda__store_covariance': True}. R^2: 0.23782584924220873. MSE: 83.98888064504678
+	min-max + lda3: number of components=53, total variance=1.0
+----> min-max + ica data. Params: {'ica__fun': 'logcosh', 'ica__max_iter': 400, 'ica__whiten': 'unit-variance', 'ica__whiten_solver': 'eigh'}. R^2: 0.2378258492422084. MSE: 83.9888806450468
+	min-max + ica: number of components=90
+
+SAVED: ----> min-max + lda3 data. R^2: 0.23782584924220873
