@@ -28,3 +28,6 @@ LINEAR MODEL:
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 RANDOM FOREST
+
+----> std-scaler + pca 0.95 data. Params: {'pca__n_components': 0.95, 'pca__svd_solver': 'full', 'pca__whiten': False, 'rf__criterion': 'squared_error', 'rf__max_samples': 0.1, 'rf__n_estimators': 200}. R^2: 0.1839004927579332. MSE: 89.93126313728472
+----> min-max + pca 0.95 data. Params: {'pca__n_components': 0.95, 'pca__svd_solver': 'full', 'pca__whiten': True, 'rf__criterion': 'squared_error', 'rf__max_samples': 0.1, 'rf__n_estimators': 200}. R^2: 0.24572262842293557. MSE: 83.11868366522147
