@@ -17,13 +17,14 @@ LINEAR MODEL:
 	    min-max + lda2: number of components=53, total variance=1.0000000000000004
 ----> lda2 data. Params: {'lda__covariance_estimator': EmpiricalCovariance(), 'lda__solver': 'eigen'}. R^2: 0.23782584924220895. MSE: 83.98888064504675
 	    lda2: number of components=53, total variance=0.999999999999971
+----> std-scaler + lda2 data. Params: {'lda__covariance_estimator': EmpiricalCovariance(), 'lda__solver': 'eigen'}. R^2: 0.23782584924220818. MSE: 83.98888064504683
+		std-scaler + lda2: number of components=53, total variance=1.000000000000015
 
 ----> min-max + lda3 data. Params: {'lda__solver': 'svd', 'lda__store_covariance': True}. R^2: 0.23782584924220873. MSE: 83.98888064504678
 	    min-max + lda3: number of components=53, total variance=1.0
 
 ----> min-max + ica data. Params: {'ica__fun': 'logcosh', 'ica__max_iter': 400, 'ica__whiten': 'unit-variance', 'ica__whiten_solver': 'eigh'}. R^2: 0.2378258492422084. MSE: 83.9888806450468
 	    min-max + ica: number of components=90
-
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
