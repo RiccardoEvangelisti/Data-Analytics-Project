@@ -32,7 +32,7 @@ LINEAR MODEL:
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 RANDOM FOREST
 
-*LESS ESTIMATORS*
+**200 ESTIMATORS, 100% samples per tree**
 ----> raw data. Params: {'rf__criterion': 'squared_error', 'rf__n_estimators': 200}. R^2: 0.2586778816134604. MSE: 81.69310291288971
 ----> std-scaled data. Params: {'rf__criterion': 'squared_error', 'rf__n_estimators': 200}. R^2: 0.25841129730103496. MSE: 81.72248029032092
 ----> min-maxed data. Params: {'rf__criterion': 'squared_error', 'rf__n_estimators': 200}. R^2: 0.25886113107235054. MSE: 81.67290896948435
@@ -45,7 +45,7 @@ RANDOM FOREST
 
 
 
-*MORE ESTIMATORS*
+**200 ESTIMATORS, 10% sample per tree**
 ----> std-scaler + pca 0.95 data. Params: {'pca__n_components': 0.95, 'pca__svd_solver': 'full', 'pca__whiten': False, 'rf__criterion': 'squared_error', 'rf__max_samples': 0.1, 'rf__n_estimators': 200}. R^2: 0.1839004927579332. MSE: 89.93126313728472
 ----> min-max + pca 0.95 data. Params: {'pca__n_components': 0.95, 'pca__svd_solver': 'full', 'pca__whiten': True, 'rf__criterion': 'squared_error', 'rf__max_samples': 0.1, 'rf__n_estimators': 200}. R^2: 0.24572262842293557. MSE: 83.11868366522147
 
@@ -65,6 +65,11 @@ RANDOM FOREST
 
 ----> ica data. Params: {'ica__fun': 'logcosh', 'ica__max_iter': 400, 'ica__whiten': 'unit-variance', 'ica__whiten_solver': 'eigh', 'rf__criterion': 'squared_error', 'rf__max_samples': 0.1, 'rf__n_estimators': 200}. R^2: 0.23245098783933904. MSE: 84.58117125527077
 	ica: number of components=90
+
+
+**500 ESTIMATORS, 2.5% per tree**
+----> min-max + lda2 data. Params: {'lda__covariance_estimator': EllipticEnvelope(random_state=42), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'rf__criterion': 'squared_error', 'rf__max_samples': 0.025, 'rf__n_estimators': 500}. R^2: 0.29396840748747954. MSE: 77.80217040450476
+		min-max + lda2: number of components=53, total variance=1.1984870090370168
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 KNN
