@@ -43,6 +43,8 @@ RANDOM FOREST
 ----> min-maxed data. Params: {'rf__criterion': 'squared_error', 'rf__n_estimators': 200}. R^2: 0.25886113107235054. MSE: 81.67290896948435
 ----> min-max + pca 0.95 data. Params: {'pca__n_components': 0.95, 'pca__svd_solver': 'full', 'pca__whiten': False, 'rf__criterion': 'squared_error', 'rf__n_estimators': 200}. R^2: 0.22618731880515086. MSE: 85.27353687724225
 		min-max + pca 0.95: number of components=55, total variance=0.9510242745378801
+----> min-max + std-scaler + pca 0.95 data. Params: {'pca__n_components': 0.95, 'pca__svd_solver': 'full', 'pca__whiten': False, 'rf__criterion': 'squared_error', 'rf__max_samples': 0.1, 'rf__n_estimators': 200}. R^2: 0.1850505616629473. MSE: 89.80452963431722
+		min-max + std-scaler + pca 0.95: number of components=67, total variance=0.9526203397533134
 ----> min-max + lda2 data. Params: {'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'rf__criterion': 'squared_error', 'rf__n_estimators': 200}. R^2: 0.2886667173669091. MSE: 78.38835726362149
 		min-max + lda2: number of components=53, total variance=1.1026680960934392
 ----> std-scaler + lda2 data. Params: {'lda__covariance_estimator': None, 'lda__shrinkage': None, 'lda__solver': 'eigen', 'rf__criterion': 'squared_error', 'rf__n_estimators': 200}. R^2: 0.2850974195649678. MSE: 78.78169101885244
