@@ -41,6 +41,9 @@ RANDOM FOREST
 ----> min-max + lda1 data. Params: {'lda__shrinkage': None, 'lda__solver': 'eigen', 'rf__criterion': 'squared_error', 'rf__max_samples': 0.1, 'rf__n_estimators': 200}. R^2: 0.2978283982216947. MSE: 77.37681315413798
 		min-max + lda1: number of components=53, total variance=0.9999999999999724
 
+
+----> min-max + lda2 data. Params: {'lda__covariance_estimator': EllipticEnvelope(random_state=42), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'rf__criterion': 'squared_error', 'rf__max_samples': 0.1, 'rf__n_estimators': 200}. R^2: 0.30339373720297813. MSE: 76.7635325922303
+		min-max + lda2: number of components=53, total variance=1.1984870090370168
 ----> min-max + lda2 data. Params: {'lda__covariance_estimator': MinCovDet(), 'lda__solver': 'eigen', 'rf__criterion': 'squared_error', 'rf__max_samples': 0.1, 'rf__n_estimators': 200}. R^2: 0.30458622215801656. MSE: 76.63212499140816
 ----> std-scaler + lda2 data. Params: {'lda__covariance_estimator': MinCovDet(), 'lda__solver': 'eigen', 'rf__criterion': 'squared_error', 'rf__max_samples': 0.1, 'rf__n_estimators': 200}. R^2: 0.30539572386804814. MSE: 76.54292078205756
 		std-scaler + lda2: number of components=53, total variance=1.2180686563868413
@@ -73,6 +76,8 @@ KNN
 
 ----> min-max + lda2 data. Params: {'knr__metric'='minkowski', 'knr__n_neighbors': 30, 'knr__weights': 'distance', 'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen'}. R^2: 0.3115366480698222. MSE: 75.86621277599323
 		min-max + lda2: number of components=53, total variance=1.491844798635474
+----> min-max + lda2 data. Params: {'knr__metric'='minkowski', 'knr__n_neighbors': 30, 'knr__weights': 'distance', 'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen'}. R^2: 0.31153664811140036. MSE: 75.86621277141147
+		min-max + lda2: number of components=53, total variance=1.4918447986354724
 ----> min-max + lda2 data. Params: {'knr__metric'='minkowski', 'knr__n_neighbors': 30, 'knr__weights': 'distance', 'lda__covariance_estimator': OAS(), 'lda__solver': 'eigen'}. R^2: 0.31153664811140036. MSE: 75.86621277141147
 		min-max + lda2: number of components=53, total variance=1.4918447986354724
 ----> std-scaler + lda2 data. Params: {'knr__metric'='minkowski', 'knr__n_neighbors': 30, 'knr__weights': 'distance', 'lda__covariance_estimator': EmpiricalCovariance(), 'lda__solver': 'eigen'}. R^2: 0.3068492795211606. MSE: 76.38274411883852
