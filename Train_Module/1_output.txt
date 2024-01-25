@@ -32,6 +32,10 @@ LINEAR MODEL:
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 RANDOM FOREST
 
+**5 ESTIMATORS, 100% samples per tree**
+----> min-max + lda2 data. Params: {'lda__covariance_estimator': EllipticEnvelope(random_state=42), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'rf__criterion': 'squared_error', 'rf__n_estimators': 5}. R^2: 0.15979728717113284. MSE: 92.58735066686052
+		min-max + lda2: number of components=53, total variance=1.1984870090370199
+
 **200 ESTIMATORS, 100% samples per tree**
 ----> raw data. Params: {'rf__criterion': 'squared_error', 'rf__n_estimators': 200}. R^2: 0.2586778816134604. MSE: 81.69310291288971
 ----> std-scaled data. Params: {'rf__criterion': 'squared_error', 'rf__n_estimators': 200}. R^2: 0.25841129730103496. MSE: 81.72248029032092
