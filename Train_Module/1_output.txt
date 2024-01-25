@@ -50,6 +50,9 @@ RANDOM FOREST
 ----> std-scaler + lda2 data. Params: {'lda__covariance_estimator': None, 'lda__shrinkage': None, 'lda__solver': 'eigen', 'rf__criterion': 'squared_error', 'rf__n_estimators': 200}. R^2: 0.2850974195649678. MSE: 78.78169101885244
 		std-scaler + lda2: number of components=53, total variance=0.9999999999999987
 
+----> min-max + lda2 data. Params: {'lda__covariance_estimator': EllipticEnvelope(random_state=42), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'rf__criterion': 'squared_error', 'rf__n_estimators': 200}. R^2: 0.3158732217015392. MSE: 75.3883377853489
+		min-max + lda2: number of components=53, total variance=1.1984870090370199
+
 
 
 **200 ESTIMATORS, 10% sample per tree**
