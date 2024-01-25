@@ -145,3 +145,5 @@ KNN
 ----> min-max + lda2 data. Params: {'knr__metric': 'cosine', 'knr__n_neighbors': 15, 'knr__weights': 'distance', 'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen'}. R^2: 0.3195085183739357. MSE: 74.98774102144176
 ----> min-max + lda2 data. Params: {'knr__metric': 'cosine', 'knr__n_neighbors': 17, 'knr__weights': 'distance', 'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen'}. R^2: 0.32030408529063914. MSE: 74.90007237675509
 		min-max + lda2: number of components=53, total variance=1.4918447986354724
+----> min-max + lda2 data. Params: {'knr__metric': 'cosine', 'knr__n_neighbors': 18, 'knr__weights': 'distance', 'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen'}. R^2: 0.32099414734455645. MSE: 74.82402999270609
+		min-max + lda2: number of components=53, total variance=1.4918447986354724
