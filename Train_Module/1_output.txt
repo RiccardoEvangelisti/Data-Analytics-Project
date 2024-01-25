@@ -15,6 +15,8 @@ LINEAR MODEL:
         
 ----> min-max + lda2 data. Params: {'lda__covariance_estimator': EmpiricalCovariance(), 'lda__solver': 'eigen'}. R^2: 0.2378258492422083. MSE: 83.98888064504682
 	    min-max + lda2: number of components=53, total variance=1.0000000000000004
+----> min-max + lda2 data. Params: {'lda__covariance_estimator': None, 'lda__shrinkage': None, 'lda__solver': 'eigen'}. R^2: 0.2378258492422083. MSE: 83.98888064504682
+		min-max + lda2: number of components=53, total variance=1.0000000000000004
 ----> lda2 data. Params: {'lda__covariance_estimator': EmpiricalCovariance(), 'lda__solver': 'eigen'}. R^2: 0.23782584924220895. MSE: 83.98888064504675
 	    lda2: number of components=53, total variance=0.999999999999971
 ----> std-scaler + lda2 data. Params: {'lda__covariance_estimator': EmpiricalCovariance(), 'lda__solver': 'eigen'}. R^2: 0.23782584924220818. MSE: 83.98888064504683

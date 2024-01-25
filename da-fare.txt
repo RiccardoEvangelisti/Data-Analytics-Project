@@ -1,10 +1,6 @@
 TO-DO list
 
 --> CLASSIC ML
-- capire se vale la pena usare:
-https://scikit-learn.org/stable/modules/generated/sklearn.covariance.EllipticEnvelope.html#sklearn.covariance.EllipticEnvelope
-https://scikit-learn.org/stable/modules/generated/sklearn.covariance.GraphicalLasso.html#sklearn.covariance.GraphicalLasso
-https://scikit-learn.org/stable/modules/generated/sklearn.covariance.GraphicalLassoCV.html#sklearn.covariance.GraphicalLassoCV
 - far ripartire i test sui nuovi parametri
 - LR: provare a usare un train più piccolo per capire i migliori parametri, poi su quelli fare un train finale e salvare
 - RF: provare ad aumentare il numero di alberi (tipo 500) ma diminuire la % di sample per albero, per capire i migliori parametri, poi su quelli fare un train finale (con tipo 100 alberi e 100% di sample ad albero) e salvare
