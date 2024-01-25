@@ -32,7 +32,11 @@ LINEAR MODEL:
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 RANDOM FOREST
 
-*LESS ESTIMATORS*
+**5 ESTIMATORS, 100% samples per tree**
+----> min-max + lda2 data. Params: {'lda__covariance_estimator': EllipticEnvelope(random_state=42), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'rf__criterion': 'squared_error', 'rf__n_estimators': 5}. R^2: 0.15979728717113284. MSE: 92.58735066686052
+		min-max + lda2: number of components=53, total variance=1.1984870090370199
+
+**200 ESTIMATORS, 100% samples per tree**
 ----> raw data. Params: {'rf__criterion': 'squared_error', 'rf__n_estimators': 200}. R^2: 0.2586778816134604. MSE: 81.69310291288971
 ----> std-scaled data. Params: {'rf__criterion': 'squared_error', 'rf__n_estimators': 200}. R^2: 0.25841129730103496. MSE: 81.72248029032092
 ----> min-maxed data. Params: {'rf__criterion': 'squared_error', 'rf__n_estimators': 200}. R^2: 0.25886113107235054. MSE: 81.67290896948435
@@ -45,7 +49,7 @@ RANDOM FOREST
 
 
 
-*MORE ESTIMATORS*
+**200 ESTIMATORS, 10% sample per tree**
 ----> std-scaler + pca 0.95 data. Params: {'pca__n_components': 0.95, 'pca__svd_solver': 'full', 'pca__whiten': False, 'rf__criterion': 'squared_error', 'rf__max_samples': 0.1, 'rf__n_estimators': 200}. R^2: 0.1839004927579332. MSE: 89.93126313728472
 ----> min-max + pca 0.95 data. Params: {'pca__n_components': 0.95, 'pca__svd_solver': 'full', 'pca__whiten': True, 'rf__criterion': 'squared_error', 'rf__max_samples': 0.1, 'rf__n_estimators': 200}. R^2: 0.24572262842293557. MSE: 83.11868366522147
 
@@ -65,6 +69,11 @@ RANDOM FOREST
 
 ----> ica data. Params: {'ica__fun': 'logcosh', 'ica__max_iter': 400, 'ica__whiten': 'unit-variance', 'ica__whiten_solver': 'eigh', 'rf__criterion': 'squared_error', 'rf__max_samples': 0.1, 'rf__n_estimators': 200}. R^2: 0.23245098783933904. MSE: 84.58117125527077
 	ica: number of components=90
+
+
+**500 ESTIMATORS, 2.5% per tree**
+----> min-max + lda2 data. Params: {'lda__covariance_estimator': EllipticEnvelope(random_state=42), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'rf__criterion': 'squared_error', 'rf__max_samples': 0.025, 'rf__n_estimators': 500}. R^2: 0.29396840748747954. MSE: 77.80217040450476
+		min-max + lda2: number of components=53, total variance=1.1984870090370168
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 KNN
@@ -91,6 +100,7 @@ KNN
 
 ----> min-max + lda2 data. Params: {'knr__metric'='euclidean', 'knr__n_neighbors': 30, 'knr__weights': 'distance', 'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen'}. R^2: 0.3115366480698222. MSE: 75.86621277599323
 		min-max + lda2: number of components=53, total variance=1.491844798635474
+----> min-max + lda2 data. Params: {'knr__metric': 'cosine', 'knr__n_neighbors': 30, 'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen'}. R^2: 0.305327199926411. MSE: 76.55047187671195
 ----> min-max + lda2 data. Params: {'knr__metric'='euclidean', 'knr__n_neighbors': 30, 'knr__weights': 'distance', 'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen'}. R^2: 0.31153664811140036. MSE: 75.86621277141147
 		min-max + lda2: number of components=53, total variance=1.4918447986354724
 ----> min-max + lda2 data. Params: {'knr__metric'='euclidean', 'knr__n_neighbors': 30, 'knr__weights': 'distance', 'lda__covariance_estimator': OAS(), 'lda__solver': 'eigen'}. R^2: 0.31153664811140036. MSE: 75.86621277141147
@@ -103,3 +113,34 @@ KNN
 
 ----> min-max + pca 0.95 data. Params: {'knr__metric'='euclidean', 'knr__n_neighbors': 30, 'knr__weights': 'distance', 'pca__n_components': 0.95, 'pca__svd_solver': 'full', 'pca__whiten': False}. R^2: 0.3062778025038847. MSE: 76.44571885361226
 		min-max + pca 0.95: number of components=54, total variance=0.9507814350412587
+
+
+
+	
+
+[CV 2/3] END knr__metric=euclidean, knr__n_neighbors=30, lda__covariance_estimator=OAS(), lda__shrinkage=None, lda__solver=eigen;, score=0.288 total time=  51.0s
+[CV 1/3] END knr__metric=euclidean, knr__n_neighbors=30, lda__covariance_estimator=OAS(), lda__shrinkage=None, lda__solver=eigen;, score=0.282 total time=  51.6s
+[CV 3/3] END knr__metric=euclidean, knr__n_neighbors=30, lda__covariance_estimator=OAS(), lda__shrinkage=None, lda__solver=eigen;, score=0.291 total time= 1.1min
+[CV 3/3] END knr__metric=cosine, knr__n_neighbors=30, lda__covariance_estimator=OAS(), lda__shrinkage=None, lda__solver=eigen;, score=0.291 total time= 3.5min
+[CV 2/3] END knr__metric=cosine, knr__n_neighbors=30, lda__covariance_estimator=OAS(), lda__shrinkage=None, lda__solver=eigen;, score=0.288 total time= 4.8min
+[CV 1/3] END knr__metric=cosine, knr__n_neighbors=30, lda__covariance_estimator=OAS(), lda__shrinkage=None, lda__solver=eigen;, score=0.283 total time= 4.9min
+[CV 1/3] END knr__metric=nan_euclidean, knr__n_neighbors=30, lda__covariance_estimator=OAS(), lda__shrinkage=None, lda__solver=eigen;, score=0.282 total time= 6.8min
+[CV 2/3] END knr__metric=nan_euclidean, knr__n_neighbors=30, lda__covariance_estimator=OAS(), lda__shrinkage=None, lda__solver=eigen;, score=0.288 total time= 6.7min
+[CV 1/3] END knr__metric=cityblock, knr__n_neighbors=30, lda__covariance_estimator=OAS(), lda__shrinkage=None, lda__solver=eigen;, score=0.268 total time= 8.7min
+[CV 3/3] END knr__metric=cityblock, knr__n_neighbors=30, lda__covariance_estimator=OAS(), lda__shrinkage=None, lda__solver=eigen;, score=0.272 total time= 8.7min
+[CV 2/3] END knr__metric=cityblock, knr__n_neighbors=30, lda__covariance_estimator=OAS(), lda__shrinkage=None, lda__solver=eigen;, score=0.273 total time= 8.7min
+[CV 3/3] END knr__metric=nan_euclidean, knr__n_neighbors=30, lda__covariance_estimator=OAS(), lda__shrinkage=None, lda__solver=eigen;, score=0.291 total time= 5.3min
+----> min-max + lda2 data. Params: {'knr__metric': 'cosine', 'knr__n_neighbors': 30, 'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen'}. R^2: 0.305327199926411. MSE: 76.55047187671195
+
+
+
+[CV 1/3] END knr__metric=euclidean, knr__n_neighbors=30, knr__weights=distance, lda__covariance_estimator=OAS(), lda__shrinkage=None, lda__solver=eigen;, score=0.287 total time= 1.3min
+[CV 2/3] END knr__metric=euclidean, knr__n_neighbors=30, knr__weights=distance, lda__covariance_estimator=OAS(), lda__shrinkage=None, lda__solver=eigen;, score=0.293 total time= 1.3min
+[CV 3/3] END knr__metric=euclidean, knr__n_neighbors=30, knr__weights=distance, lda__covariance_estimator=OAS(), lda__shrinkage=None, lda__solver=eigen;, score=0.296 total time= 1.3min
+[CV 3/3] END knr__metric=cosine, knr__n_neighbors=30, knr__weights=distance, lda__covariance_estimator=OAS(), lda__shrinkage=None, lda__solver=eigen;, score=0.302 total time= 6.0min
+[CV 2/3] END knr__metric=cosine, knr__n_neighbors=30, knr__weights=distance, lda__covariance_estimator=OAS(), lda__shrinkage=None, lda__solver=eigen;, score=0.301 total time= 6.9min
+[CV 1/3] END knr__metric=cosine, knr__n_neighbors=30, knr__weights=distance, lda__covariance_estimator=OAS(), lda__shrinkage=None, lda__solver=eigen;, score=0.296 total time= 7.1min
+[CV 2/3] END knr__metric=nan_euclidean, knr__n_neighbors=30, knr__weights=distance, lda__covariance_estimator=OAS(), lda__shrinkage=None, lda__solver=eigen;, score=0.293 total time= 8.4min
+[CV 1/3] END knr__metric=nan_euclidean, knr__n_neighbors=30, knr__weights=distance, lda__covariance_estimator=OAS(), lda__shrinkage=None, lda__solver=eigen;, score=0.287 total time= 8.4min
+[CV 3/3] END knr__metric=nan_euclidean, knr__n_neighbors=30, knr__weights=distance, lda__covariance_estimator=OAS(), lda__shrinkage=None, lda__solver=eigen;, score=0.296 total time= 7.1min
+----> min-max + lda2 data. Params: {'knr__metric': 'cosine', 'knr__n_neighbors': 30, 'knr__weights': 'distance', 'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen'}. R^2: 0.3212327811595327. MSE: 74.79773339502695
