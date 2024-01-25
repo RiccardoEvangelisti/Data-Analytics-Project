@@ -2,7 +2,9 @@ TO-DO list
 
 --> CLASSIC ML
 - Metti a posto la ConfusionMatrix!!! imposta un valore fisso di x e y altrimenti LR sale tipo fino a 2040 e le varie confusion matrix tra gli algoritmi sono diverse
-- SVR......
+- Fai prova per LR, RF, KNN con Normalize l1,l2,lmax
+- Fai downsample dei dati e prova con i dati sopra
+- SVR...... con downsample
 
 
 
