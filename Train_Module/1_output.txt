@@ -81,7 +81,12 @@ RANDOM FOREST
 
 ----> min-max + std-scaler + lda2 data. Params: {'lda__covariance_estimator': EllipticEnvelope(assume_centered=True, random_state=42), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'rf__criterion': 'squared_error', 'rf__max_samples': 0.1, 'rf__n_estimators': 200}. R^2: 0.17522633244387398. MSE: 90.88712475314925  
 		min-max + std-scaler + lda2: number of components=53, total variance=1.5016801013620267
-        
+
+
+----> min-max + lmax + lda2 data. Params: {'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'rf__criterion': 'squared_error', 'rf__max_samples': 0.1, 'rf__n_estimators': 200}. R^2: 0.3033327383525185. MSE: 76.77025444860085
+		min-max + lmax + lda2: number of components=53, total variance=1.4228327061439277
+
+
 
 
 ----> min-max + lda3 data. Params: {'lda__solver': 'svd', 'lda__store_covariance': False, 'rf__criterion': 'squared_error', 'rf__max_samples': 0.1, 'rf__n_estimators': 200}. R^2: 0.2986710038733783. MSE: 77.28396100815567
