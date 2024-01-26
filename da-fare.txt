@@ -1,7 +1,6 @@
 TO-DO list
 
 --> CLASSIC ML
-- Fai prova per LR, RF, KNN con Normalize l1,l2,lmax
 - Fai downsample dei dati e prova con i dati sopra
 - SVR...... con downsample
 
