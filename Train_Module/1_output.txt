@@ -29,6 +29,10 @@ LINEAR MODEL:
 	    min-max + ica: number of components=90
 
 
+----> min-max + lmax + lda2 data. Params: {'lda__covariance_estimator': EmpiricalCovariance(), 'lda__shrinkage': None, 'lda__solver': 'eigen'}. R^2: 0.24252875767282678. MSE: 83.47063686247944
+		min-max + lmax + lda2: number of components=53, total variance=0.9999999999999688
+
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 RANDOM FOREST
 
