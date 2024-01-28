@@ -208,6 +208,8 @@ SVM
 
 ----> raw data. Params: {}. R^2: -393.0338944366958. MSE: 43421.13373569866
 
-----> nystroem data. Params: {}. R^2: -0.12083780067178096. MSE: 123.51233923307734
+----> nystroem data. Params: {'nys__gamma': 0.01, 'nys__n_components': 300}. R^2: -0.12083780067178096. MSE: 123.51233923307734
 
 ----> min-max + nystroem data. R^2: -0.3886150408401925
+
+----> lda + nystroem data. Params: {'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'nys__gamma': 0.01, 'nys__n_components': 500}. R^2: 0.12371375623058112. MSE: 96.56362744088213
