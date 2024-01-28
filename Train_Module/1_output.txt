@@ -228,3 +228,8 @@ SVM
 
 
 ----> min-max + lda + nystroem data. Params: {'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'nys__gamma': 0.01, 'nys__n_components': 1000, 'svr__C': 10, 'svr__max_iter': 2000}. R^2: 0.2888911401193195. MSE: 78.36166721053448
+
+----> min-max + lmax + lda + nystroem data. Params: {'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'nys__gamma': 0.01, 'nys__n_components': 1000, 'svr__C': 10, 'svr__max_iter': 2000}. R^2: 0.28779294964477786. MSE: 78.48268389497608
+
+
+----> min-max + lmax + nystroem + lda data. Params: {'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'nys__gamma': 0.01, 'nys__n_components': 1000, 'svr__C': 10, 'svr__max_iter': 2000}. R^2: -0.7577291728856501. MSE: 193.6955032665814
