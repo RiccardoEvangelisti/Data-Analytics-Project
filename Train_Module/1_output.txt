@@ -206,3 +206,6 @@ SVM
 		min-max + lmax + lda2: number of components=53, total variance=1.4228327061439277
 
 
+----> nystroem data. Params: {}. R^2: -0.12083780067178096. MSE: 123.51233923307734
+
+----> min-max + nystroem data. R^2: -0.3886150408401925
