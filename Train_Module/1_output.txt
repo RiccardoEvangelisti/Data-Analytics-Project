@@ -33,6 +33,10 @@ LINEAR MODEL:
 		min-max + lmax + lda2: number of components=53, total variance=0.9999999999999688
 
 
+----> min-max + lda + nystroem data. Params: {'lda__covariance_estimator': OAS(), 'lda__solver': 'eigen', 'nys__gamma': 0.01, 'nys__n_components': 1000}. R^2: 0.33376288729897374. MSE: 73.41696026336284
+		min-max + lda + nystroem: number of components=53, total variance=1.4918447986354724
+
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 RANDOM FOREST
 
@@ -56,6 +60,8 @@ RANDOM FOREST
 
 ----> min-max + lda2 data. Params: {'lda__covariance_estimator': EllipticEnvelope(random_state=42), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'rf__criterion': 'squared_error', 'rf__n_estimators': 200}. R^2: 0.3158732217015392. MSE: 75.3883377853489
 		min-max + lda2: number of components=53, total variance=1.1984870090370199
+----> min-max + lmax + lda2 data. Params: {'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'rf__criterion': 'squared_error', 'rf__n_estimators': 200}. R^2: 0.31956746115037526. MSE: 74.98124573711553
+		min-max + lmax + lda2: number of components=53, total variance=1.4228327061439277
 
 
 
@@ -85,10 +91,15 @@ RANDOM FOREST
 
 ----> min-max + std-scaler + lda2 data. Params: {'lda__covariance_estimator': EllipticEnvelope(assume_centered=True, random_state=42), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'rf__criterion': 'squared_error', 'rf__max_samples': 0.1, 'rf__n_estimators': 200}. R^2: 0.17522633244387398. MSE: 90.88712475314925  
 		min-max + std-scaler + lda2: number of components=53, total variance=1.5016801013620267
+		
 
 
 ----> min-max + lmax + lda2 data. Params: {'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'rf__criterion': 'squared_error', 'rf__max_samples': 0.1, 'rf__n_estimators': 200}. R^2: 0.3033327383525185. MSE: 76.77025444860085
 		min-max + lmax + lda2: number of components=53, total variance=1.4228327061439277
+----> min-max + lmax + lda2 data. Params: {'lda__covariance_estimator': EllipticEnvelope(contamination=0.001, random_state=42), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'rf__criterion': 'squared_error', 'rf__max_samples': 0.1, 'rf__n_estimators': 200}. R^2: 0.30494773700343814. MSE: 76.59228734121582
+		min-max + lmax + lda2: number of components=53, total variance=1.2222186773414823
+----> min-max + lmax + lda2 data. Params: {'lda__covariance_estimator': None, 'lda__shrinkage': None, 'lda__solver': 'eigen', 'rf__criterion': 'squared_error', 'rf__max_samples': 0.1, 'rf__n_estimators': 200}. R^2: 0.2990691933215339. MSE: 77.2400819471799
+		min-max + lmax + lda2: number of components=53, total variance=0.999999999999976
 
 
 
@@ -99,6 +110,11 @@ RANDOM FOREST
 
 ----> ica data. Params: {'ica__fun': 'logcosh', 'ica__max_iter': 400, 'ica__whiten': 'unit-variance', 'ica__whiten_solver': 'eigh', 'rf__criterion': 'squared_error', 'rf__max_samples': 0.1, 'rf__n_estimators': 200}. R^2: 0.23245098783933904. MSE: 84.58117125527077
 	ica: number of components=90
+
+
+----> min-max + lda + nystroem data. Params: {'lda__covariance_estimator': OAS(), 'lda__solver': 'eigen', 'nys__gamma': 0.01, 'nys__n_components': 1000, 'rf__criterion': 'squared_error', 'rf__max_samples': 0.1, 'rf__n_estimators': 200}. R^2: 0.30487827734387474. MSE: 76.59994154865768
+		min-max + lda + nystroem: number of components=53, total variance=1.4918447986354724
+
 
 
 **500 ESTIMATORS, 2.5% per tree**
@@ -185,3 +201,62 @@ KNN
 		min-max + lmax + lda2: number of components=53, total variance=1.4228327061439277
 ----> min-max + lmax + lda2 data. Params: {'knr__metric': 'cosine', 'knr__n_neighbors': 30, 'knr__weights': 'distance', 'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen'}. R^2: 0.3219199563788604. MSE: 74.72200912988235
 		min-max + lmax + lda2: number of components=53, total variance=1.4228327061439383
+
+----> min-max + lmax + pca 0.95 data. Params: {'knr__metric': 'cosine', 'knr__n_neighbors': 20, 'knr__weights': 'distance', 'pca__n_components': 0.95, 'pca__svd_solver': 'full', 'pca__whiten': False}. R^2: 0.30420496681855114. MSE: 76.67413797383456
+		min-max + lmax + pca 0.95: number of components=53, total variance=0.9519388685710902
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SVM
+
+----> min-max + lmax + lda2 data. Params: {'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen'}. R^2: 0.2005902909773638. MSE: 88.09210673287507
+		min-max + lmax + lda2: number of components=53, total variance=1.4228327061439277
+
+
+
+
+**LinearSVR**
+
+----> raw data. Params: {}. R^2: -393.0338944366958. MSE: 43421.13373569866
+
+----> nystroem data. Params: {'nys__gamma': 0.01, 'nys__n_components': 300}. R^2: -0.12083780067178096. MSE: 123.51233923307734
+
+----> min-max + nystroem data. R^2: -0.3886150408401925
+
+----> lda + nystroem data. Params: {'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'nys__gamma': 0.01, 'nys__n_components': 500}. R^2: 0.12371375623058112. MSE: 96.56362744088213
+
+----> min-max + lmax + lda2 + nystroem data. Params: {'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'nys__gamma': 0.2, 'nys__n_components': 300}. R^2: -0.030600234847103946. MSE: 113.56848042047791
+
+
+----> lda + nystroem data. Params: {'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'nys__gamma': 0.01, 'nys__n_components': 500, 'svr__C': 10, 'svr__max_iter': 2000}. R^2: 0.13124200823981325. MSE: 95.73404084464218
+
+
+----> lda + nystroem data. Params: {'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'nys__gamma': 0.01, 'nys__n_components': 700, 'svr__C': 10, 'svr__max_iter': 2000}. R^2: 0.13621418699971177. MSE: 95.186124429482
+
+
+----> min-max + lda + nystroem data. Params: {'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'nys__gamma': 0.01, 'nys__n_components': 1000, 'svr__C': 10, 'svr__max_iter': 2000}. R^2: 0.2888911401193195. MSE: 78.36166721053448
+
+----> min-max + lmax + lda + nystroem data. Params: {'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'nys__gamma': 0.01, 'nys__n_components': 1000, 'svr__C': 10, 'svr__max_iter': 2000}. R^2: 0.28779294964477786. MSE: 78.48268389497608
+
+
+----> min-max + lmax + nystroem + lda data. Params: {'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'nys__gamma': 0.01, 'nys__n_components': 1000, 'svr__C': 10, 'svr__max_iter': 2000}. R^2: -0.7577291728856501. MSE: 193.6955032665814
+
+
+----> min-max + l1 + lda + nystroem data. Params: {'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'nys__gamma': 0.01, 'nys__n_components': 1000, 'svr__C': 10, 'svr__max_iter': 2000}. R^2: 0.2883811515940995. MSE: 78.41786613217522
+
+
+----> min-max + l2 + lda + nystroem data. Params: {'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'nys__gamma': 0.01, 'nys__n_components': 1000, 'svr__C': 10, 'svr__max_iter': 2000}. R^2: 0.28668763754966786. MSE: 78.60448535667537
+
+
+----> min-max + lda + nystroem data. Params: {'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'nys__gamma': 0.01, 'nys__n_components': 1000, 'svr__C': 10, 'svr__epsilon': 0.01, 'svr__max_iter': 2000}. R^2: 0.29001336135505706. MSE: 78.2380024216775
+
+
+----> std-scaled + lda + nystroem data. Params: {'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'nys__gamma': 0.01, 'nys__n_components': 1000, 'svr__C': 10, 'svr__epsilon': 0.01, 'svr__max_iter': 2000}. R^2: 0.28158924124822415. MSE: 79.16631049600521
+
+
+----> min-max + lda + nystroem data. Params: {'lda__covariance_estimator': OAS(), 'lda__solver': 'eigen', 'nys__gamma': 0.01, 'nys__kernel': 'sigmoid', 'nys__n_components': 1000, 'svr__C': 10, 'svr__epsilon': 0.01, 'svr__max_iter': 2000}. R^2: -0.12017641527192713. MSE: 123.43945691431401
+
+
+----> min-max + lda + nystroem data. Params: {'lda__covariance_estimator': OAS(), 'lda__shrinkage': None, 'lda__solver': 'eigen', 'nys__gamma': 0.01, 'nys__kernel': 'linear', 'nys__n_components': 1000, 'svr__C': 10, 'svr__epsilon': 0.01, 'svr__max_iter': 2000}. R^2: -0.11828320047600283. MSE: 123.23083137726026
