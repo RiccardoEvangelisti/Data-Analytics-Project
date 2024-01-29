@@ -33,6 +33,10 @@ LINEAR MODEL:
 		min-max + lmax + lda2: number of components=53, total variance=0.9999999999999688
 
 
+----> min-max + lda + nystroem data. Params: {'lda__covariance_estimator': OAS(), 'lda__solver': 'eigen', 'nys__gamma': 0.01, 'nys__n_components': 1000}. R^2: 0.33376288729897374. MSE: 73.41696026336284
+		min-max + lda + nystroem: number of components=53, total variance=1.4918447986354724
+
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 RANDOM FOREST
 
@@ -106,6 +110,11 @@ RANDOM FOREST
 
 ----> ica data. Params: {'ica__fun': 'logcosh', 'ica__max_iter': 400, 'ica__whiten': 'unit-variance', 'ica__whiten_solver': 'eigh', 'rf__criterion': 'squared_error', 'rf__max_samples': 0.1, 'rf__n_estimators': 200}. R^2: 0.23245098783933904. MSE: 84.58117125527077
 	ica: number of components=90
+
+
+----> min-max + lda + nystroem data. Params: {'lda__covariance_estimator': OAS(), 'lda__solver': 'eigen', 'nys__gamma': 0.01, 'nys__n_components': 1000, 'rf__criterion': 'squared_error', 'rf__max_samples': 0.1, 'rf__n_estimators': 200}. R^2: 0.30487827734387474. MSE: 76.59994154865768
+		min-max + lda + nystroem: number of components=53, total variance=1.4918447986354724
+
 
 
 **500 ESTIMATORS, 2.5% per tree**
