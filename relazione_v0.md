@@ -37,3 +37,12 @@ The following functionalities were developed:
 - Supervised ML techniques based on neural networks
 - Supervised ML technique with deep models for TabularData
 
+<div style="page-break-after: always;"></div>
+
+## 2 Data Acquisition
+
+The data acquisition phase involves collecting the data that needs to be analyzed. Data can be acquired in various ways, including static acquisition, which was used in this project.
+
+
+The dataset used in this project consists of a single csv file with 252175 rows and 91 columns. One of the columns represents the year of publication of the song, ranging from 1956 to 2009. All other columns contain floating-point numbers related to the audio track, making the entire dataset continuous. For this reason, regression models were used to solve the problem.
+
