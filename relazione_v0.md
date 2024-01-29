@@ -15,7 +15,7 @@ da aggiungere
 
 <div style="page-break-after: always;"></div>
 
-## 1 Introduzione
+## 1 Introduction
 
 The following project was developed as part of the **Data Analytics** course of the Master’s Degree in Computer Science at the University of Bologna.
 
