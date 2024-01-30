@@ -1,6 +1,5 @@
 train.csv
 *.save
-2_NN_outputs/
 .pt_tmp
 lightning_logs
 saved_models
