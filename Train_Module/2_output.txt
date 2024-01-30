@@ -1,0 +1,12 @@
+Iteration 1/36
+hidden_size: 128, batch_size: 32, lr: 0.001
+Test loss: 873.7599 - Best loss: inf
+Iteration 2/36
+hidden_size: 128, batch_size: 32, lr: 0.1
+Test loss: 132.6693 - Best loss: 873.7599
+Iteration 3/36
+hidden_size: 128, batch_size: 64, lr: 0.001
+Test loss: 1454.0520 - Best loss: 132.6693
+Iteration 4/36
+hidden_size: 128, batch_size: 64, lr: 0.1
+Test loss: 110.7992 - Best loss: 132.6693
