@@ -1,0 +1,4 @@
+preprocess,NN_architecture,depth,hidden_size,batch_size,learning_rate,num_epochs,criterion,optimizer,R^2,MSE
+RAW,Linear(all same size)+ReLU,1,128,32,0.1,200,MSELoss(),<class 'torch.optim.adam.Adam'>,-0.03010965877448668,3953.6445
+RAW,Linear(all same size)+ReLU,2,128,32,0.1,200,MSELoss(),<class 'torch.optim.adam.Adam'>,-1.044224599588972e-05,110.17471
+RAW,Linear(all same size)+ReLU,3,128,32,0.1,200,MSELoss(),<class 'torch.optim.adam.Adam'>,-1.044224599588972e-05,110.17471
