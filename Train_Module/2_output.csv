@@ -13,3 +13,4 @@ ID,R^2,MSE,preprocess,NN_architecture,depth,hidden_size,dropout_rate,batch_size,
 20240206-184024498,0.32458125039829944,74.34554,STD+L2,[Linear(hidden_size)+ReLU]*depth,3,256,,48,0.0001,MSELoss(),Adam,,7,1,abs,0.1,1e-07,10,200
 20240206-185852192,0.2912982831078005,78.00911,STD+L2,[Linear(hidden_size)+ReLU]*depth,1,256,,16,0.0001,MSELoss(),Adam,,7,1,abs,0.1,1e-07,10,200
 20240206-191153285,0.30030552568643165,77.01765,STD+L2,[Linear(hidden_size)+ReLU]*depth,1,256,,16,0.0001,MSELoss(),RMSprop,0.9,7,1,abs,0.1,1e-07,10,200
+20240206-195219218,0.2813763048756601,79.10126,STD+L2,[Linear(hidden_size)+ReLU]*depth,1,256,,16,0.0001,MSELoss(),RMSprop,0.9,200,1,abs,0.1,1e-07,35,200
