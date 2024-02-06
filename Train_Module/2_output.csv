@@ -19,3 +19,7 @@ ID,R^2,MSE,preprocess,NN_architecture,depth,hidden_size,dropout_rate,batch_size,
 20240206-210056780,0.34873648435214544,71.6867,STD+L2,[Linear(hidden_size)+ReLU]*depth,3,256,,48,0.0001,MSELoss(),RMSprop,0.9,6,1,abs,0.1,1e-07,30,200
 20240206-211921236,0.3429919987577341,72.319016,STD+L2,[Linear(hidden_size)+ReLU]*depth,3,256,,48,0.0001,MSELoss(),RMSprop,0.9,8,1,abs,0.1,1e-07,30,200
 20240206-214134213,0.34849681108920405,71.71308,STD+L2,[Linear(hidden_size)+ReLU]*depth,3,256,,48,0.0001,MSELoss(),RMSprop,0.9,5,1,abs,0.1,1e-07,30,200
+20240206-224016114,0.29605231684338496,77.485825,STD+L2,[Linear(hidden_size)+ReLU+Dropout(dropout_rate)]*depth,3,256,0.1,16,0.0001,MSELoss(),RMSprop,0.9,15,1,abs,0.1,1e-07,30,200
+20240206-230530583,0.3192972236991082,74.92718,STD+L2,[Linear(hidden_size)+ReLU]*depth,2,256,,48,0.0001,MSELoss(),RMSprop,0.9,6,1,abs,0.1,1e-07,30,200
+20240206-233127778,0.32020577903910585,74.82717,STD+L2,[Linear(hidden_size)+ReLU]*depth,4,256,,48,0.0001,MSELoss(),RMSprop,0.9,6,1,abs,0.1,1e-07,30,200
+20240206-234420195,-0.00887671666980605,111.05036,STD+L2,[Linear(hidden_size)+ReLU+Dropout(dropout_rate)]*depth,3,256,0.1,16,0.001,MSELoss(),RMSprop,0.9,15,1,abs,0.1,1e-07,30,200
