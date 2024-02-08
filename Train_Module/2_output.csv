@@ -49,3 +49,11 @@ ID,R^2,MSE,preprocess,NN_architecture,depth,hidden_size,dropout_rate,batch_size,
 20240208-014736321,0.3530226890905205,71.2149,STD+L2,[Linear(hidden_size)+BatchNorm1d+ReLU+Dropout]*depth,2,256,0.1,48,0.0001,MSELoss(),RMSprop,0.9,21,1,abs,0.1,1e-07,15,200
 20240208-022456512,0.35255511915815363,71.266365,STD+L2,[Linear(hidden_size)+BatchNorm1d+ReLU+Dropout]*depth,2,256,0.1,48,0.0001,MSELoss(),RMSprop,0.9,22,1,abs,0.1,1e-07,15,200
 20240208-025527765,0.3526596486443271,71.25486,STD+L2,[Linear(hidden_size)+BatchNorm1d+ReLU+Dropout]*depth,2,256,0.1,48,0.0001,MSELoss(),RMSprop,0.9,23,1,abs,0.1,1e-07,15,200
+20240208-032648753,0.31200596850408713,75.729744,STD+L2,[Linear(hidden_size)+BatchNorm1d+ReLU+Dropout]*depth,2,256,0.1,8,0.0001,MSELoss(),RMSprop,0.9,21,1,abs,0.1,1e-07,15,200
+20240208-035836919,0.3215035972539969,74.68431,STD+L2,[Linear(hidden_size)+BatchNorm1d+ReLU+Dropout]*depth,2,256,0.1,16,0.0001,MSELoss(),RMSprop,0.9,21,1,abs,0.1,1e-07,15,200
+20240208-041502478,0.3273768407057819,74.03783,STD+L2,[Linear(hidden_size)+BatchNorm1d+ReLU+Dropout]*depth,2,256,0.1,32,0.0001,MSELoss(),RMSprop,0.9,21,1,abs,0.1,1e-07,15,200
+20240208-043844985,0.3555686583871923,70.93467,STD+L2,[Linear(hidden_size)+BatchNorm1d+ReLU+Dropout]*depth,2,256,0.1,48,0.0001,MSELoss(),RMSprop,0.9,21,1,abs,0.1,1e-08,20,200
+20240208-051928590,0.3555686583871923,70.93467,STD+L2,[Linear(hidden_size)+BatchNorm1d+ReLU+Dropout]*depth,2,256,0.1,48,0.0001,MSELoss(),RMSprop,0.9,21,1,abs,0.1,1e-08,30,200
+20240208-060412661,0.33574496950939237,73.116714,STD+L2,[Linear(hidden_size)+BatchNorm1d+ReLU+Dropout]*depth,2,256,0.2,48,0.0001,MSELoss(),RMSprop,0.9,21,1,abs,0.1,1e-08,20,200
+20240208-063854030,0.33574496950939237,73.116714,STD+L2,[Linear(hidden_size)+BatchNorm1d+ReLU+Dropout]*depth,2,256,0.2,48,0.0001,MSELoss(),RMSprop,0.9,21,1,abs,0.1,1e-08,30,200
+20240208-072156568,0.3555686583871923,70.93467,STD+L2,[Linear(hidden_size)+BatchNorm1d+ReLU+Dropout]*depth,2,256,0.1,48,0.0001,MSELoss(),RMSprop,0.9,21,1,abs,0.1,1e-07,200,200
