@@ -1,0 +1,6 @@
+lda__covariance_estimator,lda__solver,nys__gamma,nys__n_components,preprocess,MSE,R^2,pca__n_components,pca__svd_solver,pca__whiten
+OAS(),eigen,0.01,1000.0,min-max + lda + nystroem,73.59795768847027,0.3313729550461333,,,
+,,,,min-maxed,83.97319895153937,0.2371153543695852,,,
+,,,,std-scaled,83.97319895153939,0.237115354369585,,,
+,,,,raw,83.97319895153942,0.2371153543695848,,,
+,,,,min-max + lmax + pca 0.95,84.7118547933054,0.23040477043180152,0.95,full,False
