@@ -1,0 +1,3 @@
+knr__metric,knr__n_neighbors,knr__weights,lda__covariance_estimator,lda__shrinkage,lda__solver,preprocess,MSE,R^2
+cosine,5,distance,OAS(),,eigen,min-max + lmax + lda,79.44021678436937,0.2782968567706807
+cosine,20,distance,OAS(),,eigen,min-max + lmax + lda,73.68618222431536,0.3305714476056114

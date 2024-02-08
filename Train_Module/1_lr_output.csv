@@ -1,6 +1,14 @@
-lda__covariance_estimator,lda__solver,nys__gamma,nys__n_components,preprocess,MSE,R^2,pca__n_components,pca__svd_solver,pca__whiten
-OAS(),eigen,0.01,1000.0,min-max + lda + nystroem,73.59795768847027,0.3313729550461333,,,
-,,,,min-maxed,83.97319895153937,0.2371153543695852,,,
-,,,,std-scaled,83.97319895153939,0.237115354369585,,,
-,,,,raw,83.97319895153942,0.2371153543695848,,,
-,,,,min-max + lmax + pca 0.95,84.7118547933054,0.23040477043180152,0.95,full,False
+preprocess,MSE,R^2,pca__n_components,pca__svd_solver,pca__whiten,lda__covariance_estimator,lda__shrinkage,lda__solver,nys__gamma,nys__n_components
+raw,83.97319895153942,0.2371153543695848,,,,,,,,
+std-scaled,83.97319895153939,0.237115354369585,,,,,,,,
+min-maxed,83.97319895153937,0.2371153543695852,,,,,,,,
+std-scaler + pca 0.95,90.27635860546177,0.1798520396575956,0.95,full,True,,,,,
+min-max + pca 0.95,85.07234314247418,0.2271297847227514,0.95,full,True,,,,,
+min-max + lmax + pca 0.95,84.7118547933054,0.2304047704318015,0.95,full,False,,,,,
+min-max + lda,83.97319895153936,0.2371153543695854,,,,EmpiricalCovariance(),,eigen,,
+min-max + lmax + lda,83.31576259383668,0.243088070772351,,,,EmpiricalCovariance(),,eigen,,
+min-max + lmax + lda + nystroem,73.61789138212835,0.3311918602562205,,,,OAS(),,eigen,0.01,1000.0
+min-max + nystroem,75.85613938207558,0.3108576934792928,,,,,,,0.01,1000.0
+std-scaler + lda + nystroem,74.34529196665893,0.324583528739861,,,,OAS(),,eigen,0.01,1000.0
+min-max + lda + nystroem,73.59795768847027,0.3313729550461333,,,,OAS(),,eigen,0.01,1000.0
+min-max + lmax + lda,83.33982242119494,0.2428694906408649,,,,OAS(),,eigen,,
