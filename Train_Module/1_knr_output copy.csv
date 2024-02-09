@@ -1,0 +1,11 @@
+knr__metric,knr__n_neighbors,knr__weights,lda__covariance_estimator,lda__shrinkage,lda__solver,preprocess,MSE,R^2,pca__n_components,pca__svd_solver,pca__whiten
+cosine,5,distance,OAS(),,eigen,min-max + lmax + lda,79.44021678436937,0.2782968567706807,,,
+cosine,20,distance,OAS(),,eigen,min-max + lmax + lda,73.68618222431536,0.3305714476056114,,,
+cosine,20,distance,,,,raw,94.92375418551735,0.137631107569,,,
+cosine,20,distance,,,,min-maxed,74.58195942593339,0.3224334383174986,,,
+cosine,20,distance,,,,min-max + pca 0.95,75.58465920298856,0.3133240525415216,0.95,full,False
+cosine,20,distance,,,eigen,min-max + lmax + lda,74.92713315180531,0.3192975837968832,,,
+cosine,20,distance,"EllipticEnvelope(contamination=0.001, random_state=42)",,eigen,min-max + lmax + lda,80.06477084633983,0.2726228713778134,,,
+cosine,20,distance,OAS(),,eigen,min-max + l2 + lda,79.9976597302793,0.2732325663832787,,,
+cosine,21,distance,OAS(),,eigen,min-max + lmax + lda,73.65587299658576,0.3308468026563244,,,
+cosine,23,distance,OAS(),,eigen,min-max + lmax + lda,73.68365905698005,0.33059437022428617,,,
