@@ -22,4 +22,6 @@ squared_error,0.1,200.0,min-max + lmax + lda,77.36671105060476,0.297134363340229
 squared_error,0.1,200.0,min-max + lmax + lda,75.89896066278361,0.3104686681954371,,,,OAS(),,eigen,9.0,,
 squared_error,0.1,200.0,min-max + lmax + lda,75.75773214837227,0.3117517092908678,,,,OAS(),,eigen,11.0,,
 squared_error,0.1,200.0,min-max + lmax + lda,75.9802818468723,0.3097298767300609,,,,OAS(),,eigen,10.0,100.0,
-squared_error,0.1,200.0,min-max + lmax + lda,75.72729657751059,0.31202821215108134,,,,OAS(),,eigen,10.0,200.0,0.001
+squared_error,0.1,200.0,min-max + lmax + lda,75.72729657751059,0.3120282121510813,,,,OAS(),,eigen,10.0,200.0,0.001
+squared_error,0.1,200.0,min-max + lmax + lda,75.44556595567765,0.3145876950370946,,,,OAS(),,eigen,20.0,300.0,0.0
+squared_error,0.1,200.0,min-max + lda,75.67692447394059,0.312485835593578,,,,OAS(),,eigen,20.0,300.0,0.001
