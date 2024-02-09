@@ -1,17 +1,18 @@
 rf__criterion,rf__max_samples,rf__n_estimators,preprocess,MSE,R^2,pca__n_components,pca__svd_solver,pca__whiten,lda__covariance_estimator,lda__shrinkage,lda__solver
-squared_error,0.1,200,raw,80.18779063974934,0.2715052539394816,,,,,,
-squared_error,0.1,200,std-scaled,80.04279076765955,0.272822557286464,,,,,,
-squared_error,0.1,200,min-maxed,80.15896724804665,0.271767110379864,,,,,,
-squared_error,0.1,200,std-scaler + pca 0.95,89.63253991690796,0.1857010414605525,0.95,full,True,,,
-squared_error,0.1,200,min-max + pca 0.95,82.62455605540794,0.2493675844947107,0.95,full,False,,,
-squared_error,0.1,200,min-max + lda,77.25976853012335,0.298105921026002,,,,,,eigen
-squared_error,0.1,200,min-max + lda,76.64643780093603,0.3036779440265826,,,,OAS(),,eigen
-squared_error,0.1,200,min-max + lda,77.28821432197675,0.2978474950268891,,,,EmpiricalCovariance(),,eigen
-squared_error,0.1,200,min-max + lda,76.92662105957245,0.3011325187165409,,,,"EllipticEnvelope(contamination=0.001, random_state=42)",,eigen
-squared_error,0.1,200,min-max + lmax + lda,76.2823513088486,0.3069856183555698,,,,OAS(),,eigen
-squared_error,0.1,200,min-max + lmax + lda,77.05838121802246,0.2999354962969788,,,,,,eigen
-squared_error,0.1,200,min-max + lmax + lda,76.904079368778,0.3013373067918833,,,,EmpiricalCovariance(),,eigen
-squared_error,0.1,200,min-max + lmax + lda,76.76169144290644,0.3026308809765855,,,,"EllipticEnvelope(contamination=0.001, random_state=42)",,eigen
-squared_error,0.25,500,min-max + lmax + lda,75.16821401197792,0.3171073982510496,,,,OAS(),,eigen
-squared_error,1.0,5,min-max + lmax + lda,91.11926387181214,0.1721943644296838,,,,OAS(),,eigen
-squared_error,1.0,200,min-max + lmax + lda,74.73294288414269,0.32106177493620336,,,,OAS(),,eigen
+squared_error,0.1,200.0,raw,80.18779063974934,0.2715052539394816,,,,,,
+squared_error,0.1,200.0,std-scaled,80.04279076765955,0.272822557286464,,,,,,
+squared_error,0.1,200.0,min-maxed,80.15896724804665,0.271767110379864,,,,,,
+squared_error,0.1,200.0,std-scaler + pca 0.95,89.63253991690796,0.1857010414605525,0.95,full,True,,,
+squared_error,0.1,200.0,min-max + pca 0.95,82.62455605540794,0.2493675844947107,0.95,full,False,,,
+squared_error,0.1,200.0,min-max + lda,77.25976853012335,0.298105921026002,,,,,,eigen
+squared_error,0.1,200.0,min-max + lda,76.64643780093603,0.3036779440265826,,,,OAS(),,eigen
+squared_error,0.1,200.0,min-max + lda,77.28821432197675,0.2978474950268891,,,,EmpiricalCovariance(),,eigen
+squared_error,0.1,200.0,min-max + lda,76.92662105957245,0.3011325187165409,,,,"EllipticEnvelope(contamination=0.001, random_state=42)",,eigen
+squared_error,0.1,200.0,min-max + lmax + lda,76.2823513088486,0.3069856183555698,,,,OAS(),,eigen
+squared_error,0.1,200.0,min-max + lmax + lda,77.05838121802246,0.2999354962969788,,,,,,eigen
+squared_error,0.1,200.0,min-max + lmax + lda,76.904079368778,0.3013373067918833,,,,EmpiricalCovariance(),,eigen
+squared_error,0.1,200.0,min-max + lmax + lda,76.76169144290644,0.3026308809765855,,,,"EllipticEnvelope(contamination=0.001, random_state=42)",,eigen
+squared_error,0.25,500.0,min-max + lmax + lda,75.16821401197792,0.3171073982510496,,,,OAS(),,eigen
+squared_error,1.0,5.0,min-max + lmax + lda,91.11926387181214,0.1721943644296838,,,,OAS(),,eigen
+squared_error,1.0,200.0,min-max + lmax + lda,74.73294288414269,0.3210617749362033,,,,OAS(),,eigen
+,,,raw,77.60189708924409,0.2949977314149871,,,,,,
