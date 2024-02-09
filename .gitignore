@@ -3,3 +3,4 @@ train.csv
 .pt_tmp
 lightning_logs
 saved_models
+__pycache__
