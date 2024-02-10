@@ -1,4 +1,4 @@
-rf__criterion,rf__max_samples,rf__n_estimators,preprocess,MSE,R^2,pca__n_components,pca__svd_solver,pca__whiten,lda__covariance_estimator,lda__shrinkage,lda__solver,rf__max_depth,rf__max_leaf_nodes,rf__ccp_alpha
+RF__criterion,RF__max_samples,RF__n_estimators,preprocess,MSE,R^2,pca__n_components,pca__svd_solver,pca__whiten,lda__covariance_estimator,lda__shrinkage,lda__solver,RF__max_depth,RF__max_leaf_nodes,RF__ccp_alpha
 squared_error,0.1,200.0,raw,80.18779063974934,0.2715052539394816,,,,,,,,,
 squared_error,0.1,200.0,std-scaled,80.04279076765955,0.272822557286464,,,,,,,,,
 squared_error,0.1,200.0,min-maxed,80.15896724804665,0.271767110379864,,,,,,,,,

@@ -1,4 +1,4 @@
-knr__metric,knr__n_neighbors,knr__weights,lda__covariance_estimator,lda__shrinkage,lda__solver,preprocess,MSE,R^2,pca__n_components,pca__svd_solver,pca__whiten,knr__leaf_size,nys__gamma,nys__n_components
+KNR__metric,KNR__n_neighbors,KNR__weights,lda__covariance_estimator,lda__shrinkage,lda__solver,preprocess,MSE,R^2,pca__n_components,pca__svd_solver,pca__whiten,KNR__leaf_size,nys__gamma,nys__n_components
 cosine,20,distance,OAS(),,eigen,min-max + lda,73.90389127983899,0.3285935916021796,,,,,,
 cosine,20,distance,EmpiricalCovariance(),,eigen,min-max + lmax + lda,74.92713315180626,0.3192975837968744,,,,,,
 cityblock,20,distance,OAS(),,eigen,min-max + lmax + lda,76.62176189080381,0.3039021211830072,,,,,,
@@ -19,3 +19,4 @@ cosine,23,distance,OAS(),,eigen,min-max + lmax + lda,73.68365905698005,0.3305943
 cosine,21,distance,OAS(),,eigen,min-max + lmax + lda,73.65587299658571,0.3308468026563247,,,,20.0,,
 cosine,21,distance,OAS(),,eigen,min-max + lmax + lda,73.65587299658571,0.3308468026563247,,,,5.0,,
 cosine,21,distance,OAS(),,eigen,min-max + lmax + lda,73.65587299658571,0.3308468026563247,,,,25.0,,
+cosine,21,distance,OAS(),,eigen,min-max + lmax + lda,73.65587299658576,0.3308468026563244,,,,10.0,,

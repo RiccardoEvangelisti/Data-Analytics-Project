@@ -1,12 +1,12 @@
-lda__covariance_estimator,lda__solver,nys__gamma,nys__n_components,preprocess,MSE,R^2,pca__n_components,pca__svd_solver,pca__whiten,svr__C,svr__epsilon,svr__max_iter
+lda__covariance_estimator,lda__solver,nys__gamma,nys__n_components,preprocess,MSE,R^2,pca__n_components,pca__svd_solver,pca__whiten,SVR__C,SVR__epsilon,SVR__max_iter
 ,,,,raw,31137.554605959194,-281.88028332793925,,,,,,
 OAS(),eigen,0.01,1000.0,min-max + lmax + lda + nystroem,79.41227687287622,0.2785506869182101,,,,,,
 OAS(),eigen,0.01,1000.0,min-max + l1 + lda + nystroem,79.29110857995242,0.2796514837362778,,,,,,
-,,0.01,1000.0,min-max + pca 0.95 + nystroem,79.7303619301129,0.27566092912405515,0.95,full,True,10.0,0.01,2000.0
-OAS(),eigen,0.01,1000,min-max + nystroem,102.28671394409318,0.0707396586740529,,,,,,
-OAS(),eigen,0.01,1000,min-max + lda + nystroem,79.51401894945785,0.2776263745303556,,,,,,
-OAS(),eigen,0.01,1000,std-scaler + lda + nystroem,79.6422640042005,0.2764612863312309,,,,,,
-OAS(),eigen,0.01,1000,min-max + l2 + lda + nystroem,79.51185772453707,0.277646008953343,,,,,,
-OAS(),eigen,0.01,1000,min-max + l1 + lda + nystroem,78.72123300160561,0.2848287228324259,,,,10.0,0.01,2000.0
-OAS(),eigen,0.01,1000,min-max + lda + nystroem,78.90611695003149,0.2831490782882301,,,,10.0,0.01,2000.0
-OAS(),eigen,0.01,1000,min-max + l1 + lda + nystroem,78.95678440634983,0.2826887716077531,,,,10.0,,2000.0
+,,0.01,1000.0,min-max + pca 0.95 + nystroem,79.7303619301129,0.2756609291240551,0.95,full,True,10.0,0.01,2000.0
+OAS(),eigen,0.01,1000.0,min-max + nystroem,102.28671394409318,0.0707396586740529,,,,,,
+OAS(),eigen,0.01,1000.0,min-max + lda + nystroem,79.51401894945785,0.2776263745303556,,,,,,
+OAS(),eigen,0.01,1000.0,std-scaler + lda + nystroem,79.6422640042005,0.2764612863312309,,,,,,
+OAS(),eigen,0.01,1000.0,min-max + l2 + lda + nystroem,79.51185772453707,0.277646008953343,,,,,,
+OAS(),eigen,0.01,1000.0,min-max + l1 + lda + nystroem,78.72123300160561,0.2848287228324259,,,,10.0,0.01,2000.0
+OAS(),eigen,0.01,1000.0,min-max + lda + nystroem,78.90611695003149,0.2831490782882301,,,,10.0,0.01,2000.0
+OAS(),eigen,0.01,1000.0,min-max + l1 + lda + nystroem,78.95678440634983,0.2826887716077531,,,,10.0,,2000.0
