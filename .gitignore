@@ -2,3 +2,4 @@ train.csv
 .pt_tmp
 lightning_logs
 __pycache__
+.vscode
