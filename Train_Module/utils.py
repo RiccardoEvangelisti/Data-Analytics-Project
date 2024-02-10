@@ -12,7 +12,7 @@ random_state = 42
 
 
 def print_all_results(num_task, name_estimator):
-    df = pd.read_csv(str(num_task) + "_" + name_estimator + "_output.csv")
+    df = pd.read_csv("outputs/" + str(num_task) + "_" + name_estimator + "_output.csv")
     display(
         df[[col for col in df.columns if col not in ["MSE", "R^2"]] + ["MSE", "R^2"]]
         .sort_values(by="R^2", ascending=False)
@@ -21,9 +21,9 @@ def print_all_results(num_task, name_estimator):
 
 
 def save_pickle(task, name_estimator, best_preprocessor, best_estimator):
-    file = open(str(task) + "_" + name_estimator + "_preproc_" + ".save", "wb")
+    file = open("preprocess_saves/" + str(task) + "_" + name_estimator + "_preproc_" + ".save", "wb")
     pickle.dump(best_preprocessor, file)
-    file = open(str(task) + "_" + name_estimator + "_model_" + ".save", "wb")
+    file = open("model_saves/" + str(task) + "_" + name_estimator + "_model_" + ".save", "wb")
     pickle.dump(best_estimator, file)
     file.close()
 
@@ -51,7 +51,7 @@ def show_confusion_matrix(y_test, y_pred):
 
 def show_parallel_plot(num_task, name_estimator):
     # Show Parallel graph
-    df = pd.read_csv(str(num_task) + "_" + name_estimator + "_output.csv")
+    df = pd.read_csv("outputs/" + str(num_task) + "_" + name_estimator + "_output.csv")
     df["R^2"] = df["R^2"].round(2)
     df["MSE"] = df["MSE"].round(2)
 
