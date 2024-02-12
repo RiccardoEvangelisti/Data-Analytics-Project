@@ -1,4 +1,4 @@
-,loss,r2,learning_rate,epochs,batch_size,virtual_batch_size,num_heads,num_attn_blocks,transformer_activation
+,loss,r2,learning_rate,batch_size,epochs,virtual_batch_size,num_heads,num_attn_blocks,transformer_activation
 3,4777460.262522944,-43401.55134845487,0.01,256,100,128,8,6,ReGLU
 4,4777460.262522944,-43401.55134845487,0.01,256,100,128,8,6,GEGLU
 5,4777460.262522944,-43401.55134845487,0.01,256,100,128,8,6,SwiGLU
