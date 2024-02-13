@@ -1,9 +1,12 @@
 import pickle
+import warnings
 import pandas as pd
 from sklearn.metrics import r2_score, mean_absolute_error, mean_absolute_percentage_error, mean_squared_error
 import torch
 from torch.utils.data import DataLoader
 from load_helper import MyDataset, NeuralNetworkDropoutBatchNorm
+
+warnings.filterwarnings("ignore", category=UserWarning, module="sklearn")
 
 MY_UNIQUE_ID = "citeristi"
 
