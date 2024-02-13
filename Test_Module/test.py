@@ -45,7 +45,10 @@ def preprocess(df, clfName):
     pipe_transformers = pickle.load(
         open(PREPROCESS_DIR + get_num_task(clfName) + clfName + "_preproc_" + ".save", "rb")
     )
-    X = pd.DataFrame(pipe_transformers.transform(X.values))
+    if clfName in [TB_NAME, TF_NAME]:
+        X = pd.DataFrame(pipe_transformers.transform(X))
+    else:
+        X = pd.DataFrame(pipe_transformers.transform(X.values))
     dfNew = pd.concat([y,X], axis=1)
     return dfNew
 
@@ -77,8 +80,7 @@ def predict(df, clfName, clf):
         y_pred = torch.stack(y_pred).squeeze().detach().numpy()
     # ----------------------------------------------------------------
     elif clfName in [TB_NAME, TF_NAME]:
-        # TODO
-        y_pred = []
+        y_pred = clf.predict(X)
     # ----------------------------------------------------------------
     else:
         raise ValueError(

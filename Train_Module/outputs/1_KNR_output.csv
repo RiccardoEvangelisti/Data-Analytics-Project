@@ -20,3 +20,5 @@ cosine,21,distance,OAS(),,eigen,min-max + lmax + lda,73.65587299658571,0.3308468
 cosine,21,distance,OAS(),,eigen,min-max + lmax + lda,73.65587299658571,0.3308468026563247,,,,5.0,,
 cosine,21,distance,OAS(),,eigen,min-max + lmax + lda,73.65587299658571,0.3308468026563247,,,,25.0,,
 cosine,21,distance,OAS(),,eigen,min-max + lmax + lda,73.65587299658576,0.3308468026563244,,,,10.0,,
+cosine,21,distance,OAS(),,eigen,min-max + lda,73.90476713527099,0.3285856345793533,,,,10.0,,
+cosine,21,distance,OAS(),,eigen,min-max + l2 + lda + nystroem,73.0442082240554,0.33640369067610465,,,,10.0,0.01,1000.0
