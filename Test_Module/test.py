@@ -69,6 +69,8 @@ def predict(df, clfName, clf):
     y = df["Year"]
 
     if clfName in [LR_NAME, RF_NAME, KNR_NAME, SVR_NAME]:
+        if clfName in [KNR_NAME]:
+            print("... wait ... KNR takes more time to compute ...")
         y_pred = clf.predict(X.values)
     # ----------------------------------------------------------------
     elif clfName in [FF_NAME]:
@@ -133,13 +135,10 @@ df = pd.read_csv("../Train_Module/train.csv").drop_duplicates()
 _, test = train_test_split(df, stratify=df["Year"], test_size=0.3, random_state=random_state)
 _, test = train_test_split(test, stratify=test["Year"], test_size=1 / 3, random_state=random_state)
 
-print(test.shape)
-
 CLF_NAME_LIST = [LR_NAME, RF_NAME, KNR_NAME, SVR_NAME, FF_NAME, TB_NAME, TF_NAME]
 
 for modelName in CLF_NAME_LIST:
     dfProcessed = preprocess(test, modelName)
-    print(dfProcessed.shape)
     clf = load(modelName)
     perf = predict(dfProcessed, modelName, clf)
     print("RESULT team: " + str(getName()) + " algoName: " + modelName + " perf: " + str(perf))
