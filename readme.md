@@ -1,5 +1,3 @@
-# Data Analytics Project
-
 <img src="./slides/Presentation-001.jpg" width="600">
 <img src="./slides/Presentation-002.jpg" width="600">
 <img src="./slides/Presentation-003.jpg" width="600">
@@ -58,4 +56,3 @@
 <img src="./slides/Presentation-056.jpg" width="600">
 <img src="./slides/Presentation-057.jpg" width="600">
 <img src="./slides/Presentation-058.jpg" width="600">
-<img src="./slides/Presentation-059.jpg" width="600">
