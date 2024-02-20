@@ -10,8 +10,8 @@ warnings.filterwarnings("ignore", category=UserWarning, module="sklearn")
 
 MY_UNIQUE_ID = "citeristi"
 
-MODELS_DIR = "model_saves/"
-PREPROCESS_DIR = "preprocess_saves/"
+MODELS_DIR = "../Train_Module/model_saves/"
+PREPROCESS_DIR = "../Train_Module/preprocess_saves/"
 
 LR_NAME = "LR"
 RF_NAME = "RF"
@@ -100,3 +100,21 @@ def predict(df, clfName, clf):
 
     return perf
 
+"""
+from sklearn.model_selection import train_test_split
+
+random_state = 42
+
+df = pd.read_csv("../Train_Module/train.csv").drop_duplicates()
+
+_, test = train_test_split(df, stratify=df["Year"], test_size=0.3, random_state=random_state)
+_, test = train_test_split(test, stratify=test["Year"], test_size=1 / 3, random_state=random_state)
+
+CLF_NAME_LIST = [LR_NAME, RF_NAME, KNR_NAME, SVR_NAME, FF_NAME, TB_NAME, TF_NAME]
+
+for modelName in CLF_NAME_LIST:
+    dfProcessed = preprocess(test, modelName)
+    clf = load(modelName)
+    perf = predict(dfProcessed, modelName, clf)
+    print("RESULT team: " + str(getName()) + " algoName: " + modelName + " perf: " + str(perf))
+"""

@@ -1,8 +1,19 @@
-This project was executed by **Claudia Citera** and **Riccardo Evangelisti** for the course of Data Analytics.
+*Project purpose*: to recognize the **year** in which a song was published based on the features of its audio track.
 
-Group ID used: **Citeristi**
+To carry out a data analytics study we implemented all the analytical pipeline:
+- Data Acquisition
+- Data Visualization
+- Data Preprocessing 
+- Modeling with 
+    - ***Linear Regression***
+    - ***Random Forest***
+    - ***K-Nearest Neighbors***
+    - ***Support Vector Regressor***
+    - ***Deep Neural Network***
+    - ***TabNet***
+    - ***TabTransformer***
+- Performance Evaluation
 
-Link to OneDrive folder with training module and testing module zips:\
-https://liveunibo-my.sharepoint.com/:f:/g/personal/claudia_citera_studio_unibo_it/EorC3mbiCBtCnYOEs5Vfvm4BJL6wIe_Ba-2AHzHKBP9b9g
+The csv file can be found [here](https://www.kaggle.com/datasets/gauravduttakiit/million-song-dataset/data).
 
-The goal of the project is to predict the **year** in which a song was published starting from some of its **audio features**. For this task different regression models were tested as asked by the professors.
+Project authors: [Claudia Citera](https://github.com/claudiacitera), [Riccardo Evangelisti](https://github.com/RiccardoEvangelisti)
