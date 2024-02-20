@@ -14,4 +14,6 @@ To carry out a data analytics study we implemented all the analytical pipeline:
     - ***TabTransformer***
 - Performance Evaluation
 
-The csv file can be found [https://www.kaggle.com/datasets/gauravduttakiit/million-song-dataset/data](here)
+The csv file can be found [here](https://www.kaggle.com/datasets/gauravduttakiit/million-song-dataset/data).
+
+Project authors: [Claudia Citera](https://github.com/claudiacitera), [Riccardo Evangelisti](https://github.com/RiccardoEvangelisti)
